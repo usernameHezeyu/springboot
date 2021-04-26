@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.spring.security.spring.mapper.UserInfoMapper">
+  <resultMap id="BaseResultMap" type="com.example.spring.security.spring.pojo.UserPojo">
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, password, username
+  </sql>
+  <select id="findOneByLogin" resultType="com.example.spring.security.spring.pojo.UserPojo">
+    select * from `user`
+    where username=#{login}
+  </select>
+
+</mapper>

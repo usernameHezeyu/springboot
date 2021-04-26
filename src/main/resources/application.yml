@@ -1,0 +1,43 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    password: kaidu123
+    username: root
+    url: jdbc:mysql://39.107.77.131:7853/test?useUnicode=true&characterEncoding=UTF8&allowMultiQueries=true&useSSL=false #请勿随意修改
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    druid:
+      stat-view-servlet:
+        enabled: true
+        url-pattern: /druid/*
+        login-username: admin
+        login-password: 12345
+      initial-size: 5
+      min-idle: 5
+      max-active: 20
+      max-wait: 60000
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      validation-query: SELECT 1 FROM DUAL
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      pool-prepared-statements: true
+      max-pool-prepared-statement-per-connection-size: 20
+      filters: [stat,wall,log4j]
+      filter:
+        stat:
+          merge-sql: true
+          slow-sql-millis: 5000
+  security:
+    user:
+      name: user123
+      password: 123456
+
+#classpath对应resource，*.xml表示配置mapper下所有xml文件
+mybatis-plus:
+  mapper-locations: classpath:mapper/*/*.xml,mapper/*.xml   #Mapper文件地址
+  configuration:
+    # 是否将sql打印到控制面板(该配置会将sql语句和查询的结果都打印到控制台)
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+#文件上传服务器
