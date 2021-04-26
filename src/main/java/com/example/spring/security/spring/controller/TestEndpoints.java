@@ -10,6 +10,7 @@
  */
 package com.example.spring.security.spring.controller;
 
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -42,7 +43,7 @@ public class TestEndpoints {
     }
 
     @GetMapping("/helloUser")
-//    @PreAuthorize("@permission.hasPermi('monitor:online:list')")
+    @PreAuthorize("@permission.hasPermi('monitor:online:list')")
     public String helloUser() {
         String currentUser = "";
         Object principl = SecurityContextHolder.getContext().getAuthentication().getPrincipal();

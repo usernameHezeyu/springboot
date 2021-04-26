@@ -8,7 +8,12 @@
   </sql>
   <select id="findOneByLogin" resultType="com.example.spring.security.spring.pojo.UserPojo">
     select * from `user`
-    where username=#{login}
+        where username='${TestName}'
   </select>
+  <select id="selecr" resultType="com.example.spring.security.spring.pojo.UserPojo">
+    select * from `user`
+        where username=${TestName}
+  </select>
+
 
 </mapper>

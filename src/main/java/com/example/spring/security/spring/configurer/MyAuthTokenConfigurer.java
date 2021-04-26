@@ -10,7 +10,7 @@
  */
 package com.example.spring.security.spring.configurer;
 
-import com.example.spring.security.spring.component.CustomUserDetailsService;
+import com.example.spring.security.spring.service.CustomUserDetailsService;
 import com.example.spring.security.spring.filter.MyTokenFilter;
 import org.springframework.security.config.annotation.SecurityConfigurerAdapter;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

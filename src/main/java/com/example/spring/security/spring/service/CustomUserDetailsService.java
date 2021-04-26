@@ -8,7 +8,7 @@
  * <author>          <time>          <version>          <desc>
  * Hezeyu           2021/4/19           1.0              自定义UserDetailsService
  */
-package com.example.spring.security.spring.component;
+package com.example.spring.security.spring.service;
 
 import com.example.spring.security.spring.mapper.UserInfoMapper;
 import com.example.spring.security.spring.pojo.UserPojo;

@@ -10,7 +10,7 @@
  */
 package com.example.spring.security.spring.filter;
 
-import com.example.spring.security.spring.component.CustomUserDetailsService;
+import com.example.spring.security.spring.service.CustomUserDetailsService;
 import com.example.spring.security.spring.utils.TokenProvider;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

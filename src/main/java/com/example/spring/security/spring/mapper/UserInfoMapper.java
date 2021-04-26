@@ -8,4 +8,6 @@ public interface UserInfoMapper extends BaseMapper<UserPojo> {
 
     UserPojo findOneByLogin(String login);
 
+    UserPojo selecr();
+
 }
