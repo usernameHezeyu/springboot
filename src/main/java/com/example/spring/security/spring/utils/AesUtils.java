@@ -133,12 +133,11 @@ public class AesUtils {
     public static void main(String[] args) {
         try {
             KeyPair keyPair = getKeyPair();
+            String publicKey = RSAUtil.getPublicKey(keyPair);
+            log.info("公钥"+publicKey);
+            String privateKey = RSAUtil.getPrivateKey(keyPair);
+            log.info("私钥"+privateKey);
 
-            String hezeyu = encrypt("hezeyu", keyPair.getPublic());
-            log.info("加密内容："+hezeyu);
-
-            String decrypt = decrypt(hezeyu, keyPair.getPrivate());
-            log.info("解密内容："+decrypt);
         } catch (Exception e) {
             e.printStackTrace();
         }

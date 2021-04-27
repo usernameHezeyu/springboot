@@ -11,7 +11,6 @@
 package com.example.spring.security.spring.config;
 
 import com.example.spring.security.spring.service.CustomUserDetailsService;
-import com.example.spring.security.spring.configurer.MyAuthTokenConfigurer;
 import com.example.spring.security.spring.exception.CustomAccessDeineHandler;
 import com.example.spring.security.spring.exception.CustomAuthenticationEntryPoint;
 import com.example.spring.security.spring.exception.LogoutSuccess;

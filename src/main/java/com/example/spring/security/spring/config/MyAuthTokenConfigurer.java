@@ -8,7 +8,7 @@
  * <author>          <time>          <version>          <desc>
  * Hezeyu           2021/4/20           1.0
  */
-package com.example.spring.security.spring.configurer;
+package com.example.spring.security.spring.config;
 
 import com.example.spring.security.spring.service.CustomUserDetailsService;
 import com.example.spring.security.spring.filter.MyTokenFilter;

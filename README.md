@@ -14,6 +14,24 @@ mybatis-plus 3.3.1.tmp
 
 jwt 3.8.2
 
-Redis 
+Redis
+#<font color="green"> 包名详解 </font>
+
+-- config 存放配置 （Security 过滤器的配置）
+
+-- controller 控制层
+
+-- exception 业务异常处理
+
+-- filter   过滤器
+
+--mapper   数据访问层
+
+--pojo    实体层
+
+--service 业务处理层
+
+--utils   工具类
+
 #目的
 主要学习springboot框架，搭建个性化程序，自学，研究
