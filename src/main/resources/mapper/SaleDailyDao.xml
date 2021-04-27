@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.spring.security.spring.mapper.SaleDailyDao">
+  <resultMap id="BaseResultMap" type="com.example.spring.security.spring.pojo.SaleDaily">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="brand" jdbcType="VARCHAR" property="brand" />
+    <result column="country" jdbcType="VARCHAR" property="country" />
+    <result column="sku" jdbcType="VARCHAR" property="sku" />
+    <result column="asin" jdbcType="VARCHAR" property="asin" />
+    <result column="pname" jdbcType="VARCHAR" property="pname" />
+    <result column="price" jdbcType="FLOAT" property="price" />
+    <result column="units" jdbcType="INTEGER" property="units" />
+    <result column="sdate" jdbcType="DATE" property="sdate" />
+    <result column="uname" jdbcType="VARCHAR" property="uname" />
+    <result column="pcat" jdbcType="VARCHAR" property="pcat" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, brand, country, sku, asin, pname, price, units, sdate, uname, pcat
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from sale_daily
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from sale_daily
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.example.spring.security.spring.pojo.SaleDaily" useGeneratedKeys="true">
+    insert into sale_daily (brand, country, sku, 
+      asin, pname, price, units, 
+      sdate, uname, pcat)
+    values (#{brand,jdbcType=VARCHAR}, #{country,jdbcType=VARCHAR}, #{sku,jdbcType=VARCHAR}, 
+      #{asin,jdbcType=VARCHAR}, #{pname,jdbcType=VARCHAR}, #{price,jdbcType=FLOAT}, #{units,jdbcType=INTEGER}, 
+      #{sdate,jdbcType=DATE}, #{uname,jdbcType=VARCHAR}, #{pcat,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.example.spring.security.spring.pojo.SaleDaily" useGeneratedKeys="true">
+    insert into sale_daily
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="brand != null">
+        brand,
+      </if>
+      <if test="country != null">
+        country,
+      </if>
+      <if test="sku != null">
+        sku,
+      </if>
+      <if test="asin != null">
+        asin,
+      </if>
+      <if test="pname != null">
+        pname,
+      </if>
+      <if test="price != null">
+        price,
+      </if>
+      <if test="units != null">
+        units,
+      </if>
+      <if test="sdate != null">
+        sdate,
+      </if>
+      <if test="uname != null">
+        uname,
+      </if>
+      <if test="pcat != null">
+        pcat,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="brand != null">
+        #{brand,jdbcType=VARCHAR},
+      </if>
+      <if test="country != null">
+        #{country,jdbcType=VARCHAR},
+      </if>
+      <if test="sku != null">
+        #{sku,jdbcType=VARCHAR},
+      </if>
+      <if test="asin != null">
+        #{asin,jdbcType=VARCHAR},
+      </if>
+      <if test="pname != null">
+        #{pname,jdbcType=VARCHAR},
+      </if>
+      <if test="price != null">
+        #{price,jdbcType=FLOAT},
+      </if>
+      <if test="units != null">
+        #{units,jdbcType=INTEGER},
+      </if>
+      <if test="sdate != null">
+        #{sdate,jdbcType=DATE},
+      </if>
+      <if test="uname != null">
+        #{uname,jdbcType=VARCHAR},
+      </if>
+      <if test="pcat != null">
+        #{pcat,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.example.spring.security.spring.pojo.SaleDaily">
+    update sale_daily
+    <set>
+      <if test="brand != null">
+        brand = #{brand,jdbcType=VARCHAR},
+      </if>
+      <if test="country != null">
+        country = #{country,jdbcType=VARCHAR},
+      </if>
+      <if test="sku != null">
+        sku = #{sku,jdbcType=VARCHAR},
+      </if>
+      <if test="asin != null">
+        asin = #{asin,jdbcType=VARCHAR},
+      </if>
+      <if test="pname != null">
+        pname = #{pname,jdbcType=VARCHAR},
+      </if>
+      <if test="price != null">
+        price = #{price,jdbcType=FLOAT},
+      </if>
+      <if test="units != null">
+        units = #{units,jdbcType=INTEGER},
+      </if>
+      <if test="sdate != null">
+        sdate = #{sdate,jdbcType=DATE},
+      </if>
+      <if test="uname != null">
+        uname = #{uname,jdbcType=VARCHAR},
+      </if>
+      <if test="pcat != null">
+        pcat = #{pcat,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.example.spring.security.spring.pojo.SaleDaily">
+    update sale_daily
+    set brand = #{brand,jdbcType=VARCHAR},
+      country = #{country,jdbcType=VARCHAR},
+      sku = #{sku,jdbcType=VARCHAR},
+      asin = #{asin,jdbcType=VARCHAR},
+      pname = #{pname,jdbcType=VARCHAR},
+      price = #{price,jdbcType=FLOAT},
+      units = #{units,jdbcType=INTEGER},
+      sdate = #{sdate,jdbcType=DATE},
+      uname = #{uname,jdbcType=VARCHAR},
+      pcat = #{pcat,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
