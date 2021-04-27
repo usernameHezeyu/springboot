@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * @ClassName:RedisStringUtils
  * @Description:  redis操作string类型工具类
- * @Author:lxw
+ * @Author:Hezeyu
  * @Date:2019/9/15 9:40
  * @Version: 1.0
  **/

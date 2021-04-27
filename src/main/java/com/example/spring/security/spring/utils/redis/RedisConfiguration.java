@@ -13,7 +13,7 @@ import java.net.UnknownHostException;
 /**
  * @ClassName:RedisConfiguration
  * @Description: redis序列化
- * @Author:lxw
+ * @Author:Hezeyu
  * @Date:2019/9/15 9:40
  * @Version: 1.0
  **/

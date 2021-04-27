@@ -11,12 +11,12 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @ClassName:RedisCommonUtils
- * @Description: redis所有数据类型通用操作
- * @Author:lxw
- * @Date:2019/9/15 9:40
- * @Version: 1.0
- **/
+ *redis所有数据类型通用操作
+ * @return:
+ * @since: 1.0.0
+ * @Author:hezeyu
+ * @Date: 2021/4/27 13:51
+ */
 @Component
 public class RedisCommonUtils {
     @Autowired

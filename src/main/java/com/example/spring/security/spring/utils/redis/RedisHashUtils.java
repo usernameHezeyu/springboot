@@ -15,7 +15,7 @@ import java.util.Set;
 /**
  * @ClassName:RedisHashUtils
  * @Description:  操作redis hashmap工具类
- * @Author:lxw
+ * @Author:Hezeyu
  * @Date:2019/9/15 9:40
  * @Version: 1.0
  **/

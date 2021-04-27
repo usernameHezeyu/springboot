@@ -7,7 +7,7 @@ import java.util.UUID;
 /**
  * @ClassName:RequestIdUtil
  * @Description:
- * @Author:lxw
+ * @Author:Hezeyu
  * @Date:2019/9/12 10:07
  * @Version: 1.0
  **/

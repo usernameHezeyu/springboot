@@ -5,7 +5,7 @@ package com.example.spring.security.spring.utils;
 /**
  * @ClassName:Base_Response
  * @Description:统一返回封装
- * @Author:lxw
+ * @Author:Hezeyu
  * @Date:2019/8/19 15:20
  * @Version: 1.0
  **/

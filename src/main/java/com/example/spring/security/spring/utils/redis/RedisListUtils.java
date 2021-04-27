@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * @ClassName:RedisListUtils
  * @Description:   操作redis list工具类
- * @Author:lxw
+ * @Author:Hezeyu
  * @Date:2019/9/15 9:40
  * @Version: 1.0
  **/
