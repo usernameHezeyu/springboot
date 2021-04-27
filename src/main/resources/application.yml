@@ -3,7 +3,6 @@ spring:
     host: 182.92.82.111
     port: 6345
     password: kaidu123
-    database: 15
     pool:
       max-active: 8
       max-wait: 1
@@ -11,7 +10,6 @@ spring:
       min-idle: 0
       testOnBorrow: true
       testOnReturn: true
-    timeout: 0
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     password: kaidu123

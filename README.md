@@ -14,5 +14,6 @@ mybatis-plus 3.3.1.tmp
 
 jwt 3.8.2
 
+Redis 
 #目的
 主要学习springboot框架，搭建个性化程序，自学，研究
