@@ -31,6 +31,7 @@ public class AdminTestController {
     @ResponseBody
     public String productInfo(){
         return " admin home page ";
+
     }
 
     @GetMapping("/helloUser")
